@@ -1,5 +1,11 @@
+    // function onlydigits(str){
+    //     return !isNaN(str) && str.trim !== ''
+    // }
+
+    // console.log(onlydigits('12a45'))
+
 function onlydigits(str){
     return !isNaN(str) && str.trim !== ''
 }
 
-console.log(onlydigits('12a45'))
+console.log(onlydigits('12345'))

@@ -1,9 +1,23 @@
-function removeDup(arr){
+// function removeDup(arr){
 
+//     let uniqueArr = []
+
+//     for(let i =0; i < arr.length; i++){
+//         if(uniqueArr.indexOf(arr[i]) === -1){
+//             uniqueArr.push(arr[i])
+//         }
+//     }
+
+//     return uniqueArr
+// }
+
+// console.log(removeDup([1,1,2,2,3,4,5]))
+
+function removedup(arr){
     let uniqueArr = []
 
     for(let i =0; i < arr.length; i++){
-        if(uniqueArr.indexOf(arr[i]) === -1){
+        if(!uniqueArr.includes(arr[i])){
             uniqueArr.push(arr[i])
         }
     }
@@ -11,4 +25,4 @@ function removeDup(arr){
     return uniqueArr
 }
 
-console.log(removeDup([1,1,2,2,3,4,5]))
+console.log(removedup([1,1,2,2,3,4,5]))

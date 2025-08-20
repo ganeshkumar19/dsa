@@ -1,32 +1,52 @@
-/*function removechar(str, chartoremove){
+// /*function removechar(str, chartoremove){
 
-    if(!str.includes(chartoremove)){
-        return `mentioned char is not in the string`
-    }
-    let removedString = ''
+//     if(!str.includes(chartoremove)){
+//         return `mentioned char is not in the string`
+//     }
+//     let removedString = ''
 
-    for(let i=0; i < str.length; i++){
-        if(str[i] !== chartoremove){
-            removedString+= str[i]
-        }
-    }
+//     for(let i=0; i < str.length; i++){
+//         if(str[i] !== chartoremove){
+//             removedString+= str[i]
+//         }
+//     }
 
  
 
-    return removedString
-}*/
+//     return removedString
+// }*/
+
+// function removechar(str, chartoremove){
+
+//     if(!str.includes(chartoremove)){
+//         return `the char is not in str`
+//     }
+
+//     let removedStr = ''
+
+//     for(let i =0; i < str.length; i++){
+//         if(str[i]!== chartoremove){
+//             removedStr+= str[i]
+//         }
+//     }
+
+//     return removedStr
+// }
+
+// console.log(removechar('hello world', 'w'))
+
 
 function removechar(str, chartoremove){
 
     if(!str.includes(chartoremove)){
-        return `the char is not in str`
+        return ` the given char is not in the string`
     }
 
     let removedStr = ''
 
     for(let i =0; i < str.length; i++){
-        if(str[i]!== chartoremove){
-            removedStr+= str[i]
+        if(str[i] !== chartoremove){
+            removedStr += str[i]
         }
     }
 
