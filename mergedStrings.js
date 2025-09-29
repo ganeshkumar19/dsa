@@ -1,23 +1,21 @@
-function mergeAlternately(s1, s2){
-    let mergedString = ''
-    let i =0; let j =0
+function mergedstring(str1, str2){
+    let alternatestring = ''
+    let i = 0; let j =0;
 
-    while(i < s1.length || j < s2.length){
+    while( i < str1.length || j < str2.length){
 
-        if (i < s1.length){
-            mergedString+= s1[i]
+        if(i <str1.length){
+            alternatestring+= str1[i]
             i++
         }
-    
-        if (j < s2.length){
-            mergedString+= s2[j]
+
+        if(j <str2.length){
+            alternatestring+= str2[j]
             j++
         }
-
     }
 
-    return mergedString
-
+    return alternatestring
 }
 
-console.log(mergeAlternately("abc", "12345"));
+console.log(mergedstring('abc', 'def'))
